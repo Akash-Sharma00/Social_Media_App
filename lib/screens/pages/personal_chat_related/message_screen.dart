@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:social_media/calling/call_screen.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 import '../../../const/allkeys.dart';
@@ -51,6 +52,20 @@ class _MessagesScreenState extends State<MessagesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("${widget.name}"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CallPage(
+                        callID: widget.roomid ?? "dknnvdk",
+                        user_name: prefs.getString(AllKeys.name) ?? "Akash"),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.video_call_rounded))
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(
