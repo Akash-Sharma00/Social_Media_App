@@ -112,7 +112,7 @@ class UiCommons {
                           connectionid: model.userID!,
                           image: model.UserImage,
                           localimage: prefs.getString(AllKeys.imagelink));
-                      currentIndex.value = 2;
+                      currentIndex.value = 1;
                       BlocProvider.of<ChatroomBloc>(context)
                           .add(LoadChatRoomEvent());
                     },

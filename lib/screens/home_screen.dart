@@ -4,7 +4,6 @@ import 'package:social_media/const/allkeys.dart';
 import 'package:social_media/screens/pages/personal_chat_related/chat_page.dart';
 import 'package:social_media/screens/pages/global_chat_related/global_page.dart';
 import 'package:social_media/screens/pages/profiles/profile_page.dart';
-import 'package:social_media/screens/pages/search_related/search_page.dart';
 
 ValueNotifier<int> currentIndex = ValueNotifier(0);
 
@@ -23,9 +22,9 @@ class HomeScreen extends StatelessWidget {
         builder: (context, value, child) {
           List<Widget> pages = [
             const GlobalPage(),
-            const SearchPage(),
+            //* const SearchPage(),
             const ChatPage(),
-            if (currentIndex.value == 3) const ProfilePage(),
+            if (currentIndex.value == 2) const ProfilePage(),
           ];
           return IndexedStack(
             index: currentIndex.value,
@@ -44,10 +43,10 @@ class HomeScreen extends StatelessWidget {
                 icon: Icon(Icons.public),
                 label: '',
               ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search),
-                label: '',
-              ),
+              // BottomNavigationBarItem(
+              //   icon: Icon(Icons.search),
+              //   label: '',
+              // ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.chat),
                 label: '',
