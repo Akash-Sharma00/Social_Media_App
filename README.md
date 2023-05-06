@@ -1,16 +1,26 @@
 # social_media
 
-A new Flutter project.
+A new Flutter App for post text/images or both. And interact with world!
 
-## Getting Started
+## Developed with
+- Flutter 
+- Firebase
+- Mongo DB
+- NodesJs
+- ZegoCloud
 
-This project is a starting point for a Flutter application.
+## State Management
+- Block
 
-A few resources to get you started if this is your first Flutter project:
+## Feature
+- Post (text/images)
+- Chatting
+- Like 
+- Comment
+- Video Call
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](https://raw.githubusercontent.com/Akash-Sharma00/gifs-images/main/socila%20media/social%20media%20gif%201.gif)
+
+![alt text](https://raw.githubusercontent.com/Akash-Sharma00/gifs-images/main/socila%20media/social%20media%202.gif)
